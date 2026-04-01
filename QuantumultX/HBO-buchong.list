@@ -1,7 +1,0 @@
-## NAME: HBO规则补充
-## AUTHOR: Ethan
-## 用于补充规则集不包含的网站，策略指向「HBO」
-## ------------------
-
-#  NAME: HBO补充规则
-HOST-SUFFIX,hbo.com,HBO
