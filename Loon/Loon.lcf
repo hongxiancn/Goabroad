@@ -1,1 +1,131 @@
+#Loon-Hongxian
 
+[General]
+sni-sniffing = true
+ipv6-vif = auto
+doh3-server = https://dns.alidns.com/dns-query
+ip-mode = dual
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlynatics.com
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+dns-server = system,223.5.5.5,114.114.114.114,119.29.29.29,8.8.8.8
+allow-wifi-access = false
+wifi-access-http-port = 7222
+wifi-access-socks5-port = 7221
+proxy-test-url = http://www.gstatic.com/generate_204
+internet-test-url = http://connectivitycheck.platform.hicloud.com/generate_204
+test-timeout = 3
+interface-mode = auto
+
+[Proxy]
+
+[Remote Proxy]
+Mitce = https://app.mitce.net/?sid=547449&token=srvydnm1,udp=true,block-quic=true,fast-open=default,vmess-aead=true,skip-cert-verify=true,enabled=true,flexible-sni=false,img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/mitce.png
+
+[Proxy Chain]
+
+[Proxy Group]
+国外应用 = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Fancynetwork(1).png
+Google = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/google(1).png
+YouTube = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/youtube(4).png
+Spotify = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/spotify(green).png
+X = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/twitter(2).png
+Meta = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/meta.png
+Telegram = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/telegram(blue1).png
+AI = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatgpt(1).png
+TikTok = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/tiktok(1).png
+Speedtest = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/speedtest(3).png
+Netflix = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/netflix(red).png
+Disney+ = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/disney(1).png
+HBO = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/HBOmax(1).png
+Bing = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bing(2).png
+国内应用 = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/taiwan.png
+Final = select,Auto-HK,Auto-SG,Auto-JP,Auto-TW,DIRECT,HK,SG,JP,KR,TW,ALL,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/waixingren.png
+Auto-HK = url-test,HK节点,url = http://www.gstatic.com/generate_204,interval = 600,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Hongkong(2).png
+Auto-SG = url-test,url = http://www.gstatic.com/generate_204,interval = 600,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/singapore(2).png
+Auto-JP = url-test,JP节点,url = http://www.gstatic.com/generate_204,interval = 600,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Japan(1).png
+Auto-TW = url-test,TW节点,url = http://www.gstatic.com/generate_204,interval = 600,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/taiwan(2).png
+HK = select,HK节点,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Hongkong(2).png
+SG = select,SG节点,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/singapore(2).png
+JP = select,JP节点,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Japan(1).png
+KR = select,KR节点,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/Korea(1).png
+TW = select,KR节点,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/taiwan(2).png
+ALL = select,ALL节点,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Fancynetwork(1).png
+
+[Remote Filter]
+HK节点 = NameRegex, FilterKey = "(?i)(港|HK|Hong)"
+TW节点 = NameRegex, FilterKey = "(?i)(台|TW|Tai)"
+JP节点 = NameRegex, FilterKey = "(?i)(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan)"
+KR节点 = NameRegex, FilterKey = "(?i)(KR|Korea|KOR|首尔|韩|韓)"
+US节点 = NameRegex, FilterKey = "(?i)(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)"
+SG节点 = NameRegex, FilterKey = "(?i)(新加坡|坡|狮城|SG|Singapore)"
+ALL节点 = NameRegex, FilterKey = ".*"
+[Rule]
+DOMAIN-KEYWORD,hongxingyunmovie,Auto-HK
+DOMAIN-SUFFIX, quora.com, 国外应用  
+DOMAIN-SUFFIX, pornhub.com, 国外应用
+DOMAIN-SUFFIX, 91porn.com, 国外应用
+DOMAIN-SUFFIX, hongxingyun.monster, 国外应用
+DOMAIN-SUFFIX, api.fuckcdn.top, 国外应用
+DOMAIN-SUFFIX, okgg.top, 国外应用
+DOMAIN-SUFFIX, ahhhhfs.com, 国外应用
+DOMAIN-KEYWORD, missav, 国外应用
+DOMAIN-SUFFIX, hongxingyunmovie.vip, 国外应用
+geoip, cn, Final
+FINAL,Final
+
+[Remote Rule]
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/ChinaMax/ChinaMax.list, policy=国内应用, tag=国内规则, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/OpenAI/OpenAI.list, policy=AI, tag=OpenAI, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Gemini/Gemini.list, policy=AI, tag=Gemini, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Google/Google.list, policy=Google, tag=Google, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/GoogleDrive/GoogleDrive.list, policy=Google, tag=GoogleDrive, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/GoogleEarth/GoogleEarth.list, policy=Google, tag=GoogleEarth, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/GoogleFCM/GoogleFCM.list, policy=Google, tag=Google, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/GoogleSearch/GoogleSearch.list, policy=Google, tag=GoogleSearch, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/GoogleVoice/GoogleVoice.list, policy=Google, tag=GoogleVoice, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Bing/Bing.list, policy=Bing, tag=Bing, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/YouTube/YouTube.list, policy=YouTube, tag=YouTube, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/YouTubeMusic/YouTubeMusic.list, policy=YouTube, tag=YouTubeMusic, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Facebook/Facebook.list, policy=Meta, tag=Facebook, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Instagram/Instagram.list, policy=Meta, tag=Instagram, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Whatsapp/Whatsapp.list, policy=Meta, tag=Whatsapp, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Threads/Threads.list, policy=Meta, tag=Threads, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Twitter/Twitter.list, policy=X, tag=Twitter, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Netflix/Netflix.list, policy=Netflix, tag=Netflix, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Disney/Disney.list, policy=Disney+, tag=Disney, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/HBO/HBO.list, policy=HBO, tag=HBO, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/TikTok/TikTok.list, policy=TikTok, tag=TikTok, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Spotify/Spotify.list, policy=Spotify, tag=Spotify, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Telegram/Telegram.list, policy=Telegram, tag=Telegram, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Speedtest/Speedtest.list, policy=Speedtest, tag=Speedtest, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/BBC/BBC.list, policy=国外应用, tag=Speedtest, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Reddit/Reddit.list, policy=国外应用, tag=Reddit, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Tumblr/Tumblr.list, policy=国外应用, tag=Tumblr, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/GitHub/GitHub.list, policy=国外应用, tag=GitHub, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Global/Global.list, policy=国外应用, tag=Global, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Global/Global_Domain.list, policy=国外应用, tag=Global_Domain, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/GlobalMedia/GlobalMedia.list, policy=国外应用, tag=GlobalMedia.list, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/GlobalMedia/GlobalMedia_Domain.list, policy=国外应用, tag=GlobalMedia_Domain, enabled=true
+[Rewrite]
+
+[Script]
+
+[Plugin]
+https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, policy=国外应用, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/NodeLinkCheck.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Umetrip_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/YouTubeSubtitlesTranslation.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/12306_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Spotify_remove_ads.lpx, enabled=false
+
+[Mitm]
+hostname=
+ca-p12=
+ca-passphrase=
+skip-server-cert-verify=false
